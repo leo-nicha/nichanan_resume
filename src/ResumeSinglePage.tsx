@@ -1,4 +1,11 @@
+import ReactModal from "react-modal";
+import { useState } from "react";
+
+ReactModal.setAppElement("#root");
+
 export const ResumeSinglePage = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gray-50 py-10 px-6 md:px-12 lg:px-24">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl overflow-hidden">
@@ -7,7 +14,7 @@ export const ResumeSinglePage = () => {
           <header className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
               <div className="flex">
-                <img className="w-[168px] h-[168px] object-cover object-center flex-shrink-0 ml-[40px]" src="" alt="" />
+                <img className="w-[168px] h-[168px] object-cover object-center flex-shrink-0 ml-[40px] rounded-xl" src="/Leo.jpg" alt="Profile" />
                 <div className="ml-[70px]">
                   <h1 className="flex justify-center text-3xl md:text-4xl font-extrabold tracking-tight pb-2">Nichanan Phopsira</h1>
                   <p className="flex justify-center text-sm md:text-2xl text-gray-700 font-medium">General Manager</p>
@@ -42,6 +49,34 @@ export const ResumeSinglePage = () => {
                   <div>
                     <strong>WeStride Institute of Technology</strong>
                     <div>Full-Stack Development (course)</div>
+
+                    {/* ปุ่มเปิด popup */}
+                    <button
+                      onClick={() => setIsOpen(true)}
+                      className="mt-2 px-3 py-1 bg-indigo-600 text-white rounded-md text-sm hover:bg-indigo-700 transition"
+                    >
+                      View Certificate
+                    </button>
+
+                    {/* popup modal */}
+                    <ReactModal
+                      isOpen={isOpen}
+                      onRequestClose={() => setIsOpen(false)}
+                      className="bg-white p-4 rounded-xl max-w-2xl mx-auto mt-20 relative outline-none"
+                      overlayClassName="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
+                    >
+                      <button
+                        onClick={() => setIsOpen(false)}
+                        className="absolute top-2 right-3 text-gray-500 hover:text-gray-800"
+                      >
+                        ✕
+                      </button>
+                      <img
+                        src="/westride-certificate.jpg"
+                        alt="WeStride Certificate"
+                        className="rounded-lg w-full object-contain"
+                      />
+                    </ReactModal>
                   </div>
 
                   <div>
@@ -105,7 +140,7 @@ export const ResumeSinglePage = () => {
                 <div className="mt-4 space-y-6">
                   <div>
                     <div className="flex">
-                      <img className="w-[92px] h-[92px]" src="" alt="" />
+                      <img className="w-[92px] h-[92px] rounded-xl" src="/oceangroupofcompanies_logo.jpeg" alt="oceangaming" />
                       <div className="ml-5">
                         <h3 className="font-semibold">Ocean Gaming Ltd.</h3>
                         <h4 className="text-sm">Metro Manila, Philippines</h4>
@@ -129,7 +164,7 @@ export const ResumeSinglePage = () => {
 
                   <div>
                     <div className="flex">
-                      <img className="w-[92px] h-[92px]" src="" alt="" />
+                      <img className="w-[92px] h-[92px] rounded-xl" src="/simba789_logo.jpg" alt="simba789" />
                       <div className="ml-5">
                         <h3 className="font-semibold">Simba789 Corporate</h3>
                         <h4 className="text-sm">Metro Manila, Philippines</h4>
@@ -149,7 +184,7 @@ export const ResumeSinglePage = () => {
 
                   <div>
                     <div className="flex">
-                      <img className="w-[92px] h-[92px]" src="" alt="" />
+                      <img className="w-[92px] h-[92px] rounded-xl" src="/wanfang_logo.jpg" alt="wanfang" />
                       <div className="ml-5">
                         <h3 className="font-semibold">WANFANG Technology Management Inc.</h3>
                         <h4 className="text-sm">Metro Manila, Philippines</h4>
@@ -167,7 +202,7 @@ export const ResumeSinglePage = () => {
 
                   <div>
                     <div className="flex">
-                      <img className="w-[92px] h-[92px]" src="" alt="" />
+                      <img className="w-[92px] h-[92px] rounded-xl" src="/wonmajestic_logo.jpg" alt="wonmajestic" />
                       <div className="ml-5">
                         <h3 className="font-semibold">WON Majestic Co., Ltd.</h3>
                         <h4 className="text-sm">Metro Manila, Philippines / Sihanoukville, Cambodia</h4>
@@ -189,7 +224,7 @@ export const ResumeSinglePage = () => {
 
                   <div>
                     <div className="flex">
-                      <img className="w-[92px] h-[92px]" src="" alt="" />
+                      <img className="w-[92px] h-[92px] rounded-xl" src="/kingsoft_logo.jpg" alt="kingsoft" />
                       <div className="ml-5">
                         <h3 className="font-semibold">Kingsoft Corporation Limited</h3>
                         <h4 className="text-sm">Kuala Lumpur, Malaysia</h4>
@@ -208,7 +243,7 @@ export const ResumeSinglePage = () => {
 
                   <div>
                     <div className="flex">
-                      <img className="w-[92px] h-[92px]" src="" alt="" />
+                      <img className="w-[92px] h-[92px] rounded-xl" src="/clickalot_logo.jpg" alt="clickalot" />
                       <div className="ml-5">
                         <h3 className="font-semibold">Clickalot Co., Ltd.</h3>
                         <h4 className="text-sm">Bangkok, Thailand</h4>
@@ -226,7 +261,7 @@ export const ResumeSinglePage = () => {
 
                   <div>
                     <div className="flex">
-                      <img className="w-[92px] h-[92px]" src="" alt="" />
+                      <img className="w-[92px] h-[92px] rounded-xl" src="/ini3_logo.jpg" alt="ini3" />
                       <div className="ml-5">
                         <h3 className="font-semibold">Ini3 Digital PLC</h3>
                         <h4 className="text-sm">Bangkok, Thailand</h4>
@@ -244,7 +279,7 @@ export const ResumeSinglePage = () => {
 
                   <div>
                     <div className="flex">
-                      <img className="w-[92px] h-[92px]" src="" alt="" />
+                      <img className="w-[92px] h-[92px] rounded-xl" src="/gameindy_logo.jpg" alt="gameindy" />
                       <div className="ml-5">
                         <h3 className="font-semibold">GAMEINDY</h3>
                         <h4 className="text-sm">Bangkok, Thailand</h4>
@@ -261,7 +296,7 @@ export const ResumeSinglePage = () => {
 
                   <div>
                     <div className="flex">
-                      <img className="w-[92px] h-[92px]" src="" alt="" />
+                      <img className="w-[92px] h-[92px] rounded-xl" src="/asiasoft_logo.jpg" alt="asiasoft" />
                       <div className="ml-5">
                         <h3 className="font-semibold">Asiasoft Corporation Public Company Limited</h3>
                         <h4 className="text-sm">Bangkok, Thailand</h4>
