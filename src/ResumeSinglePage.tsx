@@ -17,7 +17,7 @@ export const ResumeSinglePage = () => {
             <div>
               <div className="flex flex-col md:flex-row items-center md:items-start">
                 <img className="w-[168px] h-[168px] object-cover object-center flex-shrink-0 rounded-xl mx-auto md:ml-[40px] md:mr-0"
-                  src="/leo_ai.jpg" alt="Leo" />
+                  src="/leo_profile.jpg" alt="Leo" />
                 <div className="mt-4 md:mt-0 text-center md:text-left md:ml-[70px]">
                   <h1 className="flex justify-center text-3xl md:text-4xl font-extrabold tracking-tight pb-2">Nichanan Phopsira</h1>
                   <p className="flex justify-center text-xl md:text-2xl text-gray-700 font-medium">General Manager</p>
@@ -331,7 +331,11 @@ export const ResumeSinglePage = () => {
             </section>
           </main>
 
-          <footer ></footer>
+          <footer className="text-center text-gray-500 text-sm py-4 border-t mt-5">
+            <p>© 2025 Nichanan Phopsira. All rights reserved.</p>
+            <p>Tech Stack: React · TypeScript · Tailwind CSS · Node.js</p>
+            <p>Deployed on Vercel</p>
+          </footer>
         </div>
       </div>
     </div>
