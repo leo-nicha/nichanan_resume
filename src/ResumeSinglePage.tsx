@@ -7,7 +7,9 @@ export const ResumeSinglePage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gray-50 py-10 px-6 md:px-12 lg:px-24">
+    <div className="min-h-screen bg-gray-50 bg-fixed bg-center py-10 px-6 md:px-12 lg:px-24"
+      style={{ backgroundImage: "url('/bg-animation.gif')" }}
+    >
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl overflow-hidden">
         <div className="p-8 lg:p-12">
           {/* Header */}
