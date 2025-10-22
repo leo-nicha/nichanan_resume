@@ -15,11 +15,12 @@ export const ResumeSinglePage = () => {
           {/* Header */}
           <header className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
-              <div className="flex">
-                <img className="w-[168px] h-[168px] object-cover object-center flex-shrink-0 ml-[40px] rounded-xl" src="/leo_ai.jpg" alt="Leo" />
-                <div className="ml-[70px]">
+              <div className="flex flex-col md:flex-row items-center md:items-start">
+                <img className="w-[168px] h-[168px] object-cover object-center flex-shrink-0 rounded-xl mx-auto md:ml-[40px] md:mr-0"
+                  src="/leo_ai.jpg" alt="Leo" />
+                <div className="mt-4 md:mt-0 text-center md:text-left md:ml-[70px]">
                   <h1 className="flex justify-center text-3xl md:text-4xl font-extrabold tracking-tight pb-2">Nichanan Phopsira</h1>
-                  <p className="flex justify-center text-sm md:text-2xl text-gray-700 font-medium">General Manager</p>
+                  <p className="flex justify-center text-xl md:text-2xl text-gray-700 font-medium">General Manager</p>
                   <section className="mb-6">
                     <p className="mt-2 text-gray-700 text-sm">A results-driven leader with expertise in team development and organizational management. Adept at optimizing workforce capabilities and operational efficiency. Brings valuable experience in marketing and customer service, supported by exceptional communication and interpersonal skills.</p>
                   </section>
