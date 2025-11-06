@@ -231,7 +231,7 @@ export const ResumeSinglePage = () => {
                       <li>Developed brand awareness, maintain strong customer relationships, and foster customer loyalty.</li>
                       <li>Developed and execute business marketing plans and manage promotional activities.</li>
                       <li>Managed accounting operations and controlled budgets to optimize financial performance.</li>
-                      <li>Managed affiliate marketing programs across Thailand and India</li>
+                      <li>Managed affiliate marketing programs across Thailand, Vietnam, India, and Brazil.</li>
                       <li>Collaborated with Mooir Gaming (Douglas, Isle of Man) on operations management to enhance workflow efficiency and ensure compliance with international standards.</li>
                       <li>Experienced in Know Your Customer (KYC), Customer Due Diligence (CDD), risk assessment, and fraud detection.</li>
                       <li>Team management experience across Thailand and Vietnam, focusing on CSR and marketing initiatives.</li>
